@@ -6,4 +6,6 @@
 #  140 shim6
 # .........
 
-cat /etc/protocols | grep '^[A-Za-z].*' | cut --fields="2,3" --output-delimiter=" "
+#cat /etc/protocols | grep '^[A-Za-z].*' | cut --fields="2,3" --output-delimiter=" "
+cat /etc/protocols | grep -o "^[A-Za-Z].*" | cut --fields="2,3" --output-delimiter=" " | tail -n 5 | sort -r
+
