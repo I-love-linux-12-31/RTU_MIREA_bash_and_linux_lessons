@@ -17,7 +17,7 @@ if [ "$data" != "" ]
 #    echo "$data";
 
   # Вывод без хешей
-    echo " file name";
+#    echo " file name";
     echo "$data" | cut -c 35-;
   )
     else (
