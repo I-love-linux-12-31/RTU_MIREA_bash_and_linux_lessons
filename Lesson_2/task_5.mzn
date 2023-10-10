@@ -14,9 +14,6 @@ constraint forall(m in menu, d in dropdown, i in icons)(
   iconsitem = 200
 );
 
+constraint (menuitem in menu /\ dropdownitem in dropdown /\ iconsitem in icons);
+
 solve maximize menuitem+dropdownitem+iconsitem;
-
-
-
-
-% А правильно ли работает этот код... %

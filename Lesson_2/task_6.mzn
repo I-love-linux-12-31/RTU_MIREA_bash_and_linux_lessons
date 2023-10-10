@@ -9,7 +9,7 @@ var int: sha;
 var int: fo;
 var int: lef;
 var int: rig;
-constraint forall(m in menu, d in dropdown, i in icons)(
+
 
 constraint(if root = 100 then fo >= 100 /\ fo < 200 endif);
 constraint(if root = 100 then tar >= 200 /\ tar < 300 endif);
@@ -27,7 +27,7 @@ constraint(if sha = 100 then tar >= 100 /\ tar < 200 endif);
 
 
 
-
-constraint (fo > 0 /\ tar > 0 /\ rig > 0 /\ lef > 0 /\ sha > 0);
+constraint (fo in foo /\ tar in target /\ rig in right /\ lef in left /\ sha in shared);
+% constraint (fo >= 0 /\ tar >= 0 /\ rig >= 0 /\ lef >= 0 /\ sha >= 0);
 
 solve satisfy;

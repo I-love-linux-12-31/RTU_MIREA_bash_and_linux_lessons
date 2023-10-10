@@ -13,7 +13,6 @@ predicate all_different(array [int] of var int: x) =
   );
 
 
-
 % Constrain the ticket to have the correct sum of digits
 
 constraint x0 + x1 + x2 = x3 + x4 + x5;
