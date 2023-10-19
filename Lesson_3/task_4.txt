@@ -1,0 +1,5 @@
+<sequence> ::= <empty> | <element> <sequence>
+<element> ::= <paren> | <bracket>
+<paren> ::= '(' <sequence> ')'
+<bracket> ::= '{' <sequence> '}' | '{' <sequence> '}' <paren>
+<empty> ::=

@@ -1,0 +1,14 @@
+<config> ::= "{" <groups> "," <students> "," <subject> "}"
+<groups> ::= "\"groups\": [" <group-list> "]"
+<group-list> ::= <group> | <group> "," <group-list>
+<group> ::= "\"" <group-name> "\""
+<group-name> ::= "ИКБО-" <number> "-" <number>
+<number> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<students> ::= "\"students\": [" <student-list> "]"
+<student-list> ::= <student> | <student> "," <student-list>
+<student> ::= "{" "\"name\": \"" <name> "\",\"age\": " <age> ",\"group\": \"" <group-name> "\"}"
+<name> ::= <string>
+<age> ::= <number>
+<subject> ::= "\"subject\": \"" <string> "\""
+<string> ::= <letter> | <letter> <string>
+<letter> ::= "a" | "b" | "c" | ... | "z" | "A" | "B" | "C" | ... | "Z" | "0" | "1" | "2" | ... | "9" | " " | "-" | "." | "," | "!" | "?" | ":" | ";" | "(" | ")" | "[" | "]" | "{" | "}"

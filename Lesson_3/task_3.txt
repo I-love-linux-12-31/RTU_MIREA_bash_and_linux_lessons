@@ -1,0 +1,2 @@
+<binary> ::= 0 | 1
+<binary_string> ::= <binary> | <binary> <binary_string>
