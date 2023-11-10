@@ -23,11 +23,6 @@ def generate_phrase(grammar, start):
 
 
 BNF = '''
-<sequence> ::= <empty> | <element> <sequence>
-<element> ::= <paren> | <bracket>
-<paren> ::= '(' <sequence> ')'
-<bracket> ::= '{' <sequence> '}' | '{' <sequence> '}' <paren>
-<empty> ::=
 '''
 
 for i in range(10):
