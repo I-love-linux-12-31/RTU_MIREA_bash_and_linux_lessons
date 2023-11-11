@@ -13,9 +13,10 @@ distr.zip:
 	7z a distr.zip *.*
 
 clean:
-	@echo -e "\033[35m clean ended \033[0m"
 	rm -f distr.zip
 	rm -f files.lst
 	rm -f prog
+	@echo -e "\033[35m clean ended \033[0m"
+
 
 
